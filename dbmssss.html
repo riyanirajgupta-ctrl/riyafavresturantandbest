@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Reservation & Billing</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f7f7f7; }
+        header { background: #ff6347; color: white; padding: 20px; text-align: center; }
+        nav a { color: white; margin: 0 10px; text-decoration: none; }
+        section { padding: 20px; margin: 10px; background: white; border-radius: 5px; }
+        table, th, td { border: 1px solid #ccc; border-collapse: collapse; padding: 8px; }
+        input, select, button { margin: 5px 0; padding: 8px; }
+        button { background: #ff6347; color: white; border: none; cursor: pointer; }
+        button:hover { background: #e5533d; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Riya's Restaurant</h1>
+    <nav>
+        <a href="#menu">Menu</a>
+        <a href="#booking">Book Table</a>
+        <a href="#orders">Orders</a>
+        <a href="#payment">Payment</a>
+    </nav>
+</header>
+
+<section id="menu">
+    <h2>Menu</h2>
+    <table>
+        <tr><th>Dish</th><th>Category</th><th>Price</th></tr>
+        <tr><td>Samosa</td><td>Snack</td><td>20</td></tr>
+        <tr><td>Vadapav</td><td>Snack</td><td>25</td></tr>
+        <tr><td>Chai</td><td>Drink</td><td>15</td></tr>
+    </table>
+</section>
+
+<section id="booking">
+    <h2>Book a Table</h2>
+    <form>
+        Name: <input type="text" placeholder="Your Name" required><br>
+        Phone: <input type="tel" placeholder="Phone Number" required><br>
+        Date: <input type="date" required><br>
+        Time: <input type="time" required><br>
+        Table: 
+        <select>
+            <option>Table 1</option>
+            <option>Table 2</option>
+            <option>Table 3</option>
+        </select><br>
+        <button type="submit">Book Now</button>
+    </form>
+</section>
+
+<section id="orders">
+    <h2>Place Orders</h2>
+    <form>
+        Dish:
+        <select>
+            <option>Samosa</option>
+            <option>Vadapav</option>
+            <option>Chai</option>
+        </select>
+        Quantity: <input type="number" min="1" value="1"><br>
+        <button type="submit">Add to Order</button>
+    </form>
+</section>
+
+<section id="payment">
+    <h2>Payment</h2>
+    <form>
+        Booking ID: <input type="text" placeholder="Enter Booking ID" required><br>
+        Amount: <input type="number" placeholder="Total Amount" required><br>
+        <button type="submit">Pay Now</button>
+    </form>
+</section>
+
+<footer style="text-align:center; padding:10px; background:#ff6347; color:white;">
+    &copy; 2025 Riya's Restaurant
+</footer>
+
+</body>
+</html>
